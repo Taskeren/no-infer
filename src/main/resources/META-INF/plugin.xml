@@ -2,7 +2,7 @@
 <idea-plugin>
     <id>cn.elytra.no_infer</id>
     <name>No Infer</name>
-    <vendor url="https://github.com/Taskeren">The Genius Warlock</vendor>
+    <vendor url="https://github.com/Taskeren">Taskeren</vendor>
     <description>
         <![CDATA[Use `cn.elytra.no_infer.NoInfer` annotation to explicitly mark generic type arguments.]]></description>
     <depends>com.intellij.java</depends>
