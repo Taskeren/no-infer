@@ -23,7 +23,8 @@ class KotlinExplicitGenericTypeInspection : KotlinApplicableInspectionBase<KtCal
             }
         }
 
-    override fun KaSession.prepareContext(element: KtCallExpression): String? {
+    context(session: KaSession)
+    override fun prepareContext(element: KtCallExpression): String? {
         if (element.typeArguments.isNotEmpty() || resolveNoInferFunction(element) == null) {
             return null
         }
